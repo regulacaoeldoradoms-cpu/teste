@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta de Pendências - Regulação de Saúde</title>
+  <meta name="description" content="Consulte se existe pendência na Regulação de Saúde de Eldorado/MS e acesse o canal de comunicação do Conselho Municipal de Saúde." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header card">
+      <div class="logos" aria-label="Identidade institucional">
+        <img src="https://i.ibb.co/8nVZdPh3/file-00000000244471f5882f38cc89b50f79.png" alt="Logo da Secretaria Municipal de Saúde" class="logo" />
+        <img src="https://i.ibb.co/zhPKh20c/file-00000000e42471f588b2e9f67f70ff50.png" alt="Logo do Conselho Municipal de Saúde" class="logo" />
+      </div>
+
+      <p class="tag">Regulação de Saúde • Eldorado/MS</p>
+      <h1>Consulta de Pendências</h1>
+      <p class="subtitle">
+        Consulte aqui se existe alguma pendência cadastral ou administrativa.
+      </p>
+    </header>
+
+    <section class="card intro-card">
+      <h2>Como fazer a consulta</h2>
+      <ol class="steps">
+        <li>Digite o <strong>nome do paciente</strong>.</li>
+        <li>Digite o <strong>Cartão SUS (CNS)</strong>.</li>
+        <li>Clique em <strong>Consultar pendência</strong>.</li>
+        <li>Se houver pendência, procure a Regulação de Saúde para orientações.</li>
+      </ol>
+    </section>
+
+    <section class="card consult-card" aria-labelledby="consultaTitulo">
+      <h2 id="consultaTitulo">Consulta</h2>
+      <p class="section-text">Preencha os dados abaixo.</p>
+
+      <form id="consultaForm" class="form">
+        <div class="field">
+          <label for="nome">Nome do paciente</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Ex.: Maria Aparecida da Silva"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="cns">Cartão SUS (CNS)</label>
+          <input
+            type="text"
+            id="cns"
+            name="cns"
+            placeholder="Digite o número do CNS"
+            inputmode="numeric"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <button type="submit" id="consultarBtn">Consultar pendência</button>
+      </form>
+
+      <div id="status" class="status muted">
+        Preencha os campos acima para realizar a consulta.
+      </div>
+    </section>
+
+    <section class="card info-card">
+      <h2>O que significa o resultado</h2>
+
+      <div class="info-box success-box">
+        <h3>Se aparecer pendência</h3>
+        <p>
+          Vá até o <strong>Setor de Regulação de Saúde</strong> para receber as orientações.
+        </p>
+      </div>
+
+      <div class="info-box neutral-box">
+        <h3>Se não aparecer pendência</h3>
+        <p>
+          Nenhuma pendência foi localizada com os dados informados.
+        </p>
+      </div>
+    </section>
+
+    <section class="card address-card">
+      <h2>Atendimento presencial</h2>
+      <p><strong>Setor de Regulação de Saúde</strong></p>
+      <p>Rua Irmã Aristela, nº 836</p>
+      <p>Eldorado/MS</p>
+    </section>
+
+    <section class="card report-card" aria-labelledby="relatoTitulo">
+      <p class="small-tag">Conselho Municipal de Saúde</p>
+      <h2 id="relatoTitulo">Canal de comunicação</h2>
+      <p class="section-text">
+        Se quiser enviar crítica, sugestão, elogio ou relatar alguma situação relacionada à saúde de Eldorado/MS,
+        use o formulário abaixo.
+      </p>
+
+      <a
+        id="relatoLink"
+        class="secondary-button"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-disabled="true"
+      >
+        Enviar relato
+      </a>
+
+      <p id="relatoAviso" class="helper-text">
+        O formulário será aberto em uma nova aba.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
