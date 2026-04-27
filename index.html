@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta de Pendências - Regulação de Saúde</title>
+  <meta name="description" content="Consulta pública de pendências da Regulação de Saúde e canal de comunicação com o Conselho Municipal de Saúde de Eldorado/MS." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <main class="site-shell">
+    <section class="hero card-surface">
+      <div class="hero-topbar">
+        <div class="eyebrow-wrap">
+          <span class="eyebrow">Regulação de Saúde • Eldorado/MS</span>
+          <span class="eyebrow soft">Consulta Pública</span>
+        </div>
+
+        <div class="mini-logos" aria-label="Identidade institucional">
+          <div class="mini-logo-badge" title="Secretaria Municipal de Saúde">
+            <img
+              src="https://i.ibb.co/8nVZdPh3/file-00000000244471f5882f38cc89b50f79.png"
+              alt="Logo da Secretaria Municipal de Saúde de Eldorado MS"
+              class="mini-logo"
+            />
+          </div>
+          <div class="mini-logo-badge" title="Conselho Municipal de Saúde">
+            <img
+              src="https://i.ibb.co/zhPKh20c/file-00000000e42471f588b2e9f67f70ff50.png"
+              alt="Logo do Conselho Municipal de Saúde de Eldorado MS"
+              class="mini-logo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Consulta de Pendências</h1>
+          <p class="hero-text">
+            Verifique se existe alguma pendência cadastral ou administrativa na
+            Regulação de Saúde de forma simples e rápida.
+          </p>
+
+          <div class="hero-points">
+            <div class="info-chip">Consulta por <strong>nome + CNS</strong></div>
+            <div class="info-chip">Resultado <strong>rápido</strong></div>
+            <div class="info-chip">Atendimento <strong>presencial</strong> quando necessário</div>
+          </div>
+        </div>
+
+        <div class="hero-side-note">
+          <div class="note-card">
+            <span class="note-title">Importante</span>
+            <p>
+              Se houver pendência, o sistema exibirá apenas um aviso genérico.
+              Para detalhes e orientações, o paciente deve procurar o setor
+              presencialmente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <section class="card-surface consulta-panel" aria-labelledby="consultaTitulo">
+        <div class="section-head">
+          <span class="section-icon">🔎</span>
+          <div>
+            <h2 id="consultaTitulo">Consultar situação</h2>
+            <p>Preencha os dados abaixo para verificar a existência de pendência.</p>
+          </div>
+        </div>
+
+        <form id="consultaForm" class="form">
+          <div class="field">
+            <label for="nome">Nome do paciente</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite o nome do paciente"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="cns">CNS</label>
+            <input
+              type="text"
+              id="cns"
+              name="cns"
+              placeholder="Digite o CNS"
+              inputmode="numeric"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <button type="submit" id="consultarBtn">Consultar agora</button>
+        </form>
+
+        <div id="status" class="status muted">
+          Preencha os campos acima para realizar a consulta.
+        </div>
+      </section>
+
+      <aside class="side-column">
+        <section class="card-surface contact-card">
+          <div class="section-head compact">
+            <span class="section-icon">📍</span>
+            <div>
+              <h2>Atendimento presencial</h2>
+              <p>Procure a Regulação de Saúde quando precisar de orientação.</p>
+            </div>
+          </div>
+
+          <ul class="contact-list">
+            <li><strong>Setor:</strong> Regulação de Saúde</li>
+            <li><strong>Endereço:</strong> Rua Irmã Aristela, nº 836</li>
+            <li><strong>Município:</strong> Eldorado/MS</li>
+          </ul>
+        </section>
+
+        <section class="card-surface relato-section" aria-labelledby="relatoTitulo">
+          <div class="section-head compact">
+            <span class="section-icon">📝</span>
+            <div>
+              <h2 id="relatoTitulo">Canal de comunicação</h2>
+              <p>Espaço destinado ao Conselho Municipal de Saúde.</p>
+            </div>
+          </div>
+
+          <span class="pill">Conselho Municipal de Saúde</span>
+
+          <p class="relato-text">
+            Caso deseje relatar crítica, sugestão, situação ocorrida ou outro fato
+            relacionado à saúde de Eldorado/MS, utilize o formulário abaixo.
+          </p>
+
+          <p class="relato-note">
+            O formulário pode exigir login em conta Google, conforme a configuração
+            definida para o canal de comunicação.
+          </p>
+
+          <a
+            id="relatoLink"
+            class="secondary-button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-disabled="true"
+          >
+            Abrir formulário de relato
+          </a>
+
+          <p id="relatoAviso" class="helper-text">
+            Assim que o link do formulário estiver configurado, o botão acima abrirá o canal de comunicação.
+          </p>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
