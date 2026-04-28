@@ -31,7 +31,7 @@ body {
   color: var(--text);
   background:
     linear-gradient(rgba(244, 248, 252, 0.82), rgba(251, 253, 255, 0.92)),
-    url("https://ibb.co/1YwNkp80") center/cover fixed no-repeat;
+    url("fundo-site.png") center/cover fixed no-repeat;
 }
 
 .page {
